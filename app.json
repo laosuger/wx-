@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cinema/cinema",
+    "pages/user/user",
+    "pages/details/details",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "电影资讯TOP100",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "咨询"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "影院"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ],
+    "color": "#959595",
+    "selectedColor": "#e3321b"
+  }
+}
