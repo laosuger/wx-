@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+
+<view class="search">
+	<input type="text" bindinput="input" value="{{value}}"/>
+	<button bindtap="search">搜索</button>
+</view>
+<view class="context">
+	<view>
+		<view wx:for="{{list}}">
+			<navigator url="{{'/pages/details/details?movieName='+item.url}}">
+				{{item.movieName}}
+			</navigator>
+		</view>
+	</view>
+</view>

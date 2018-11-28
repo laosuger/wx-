@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="container">
+	
+	<!-- 标题 -->
+	<view class="title">
+		
+		<view class="address">{{city}}</view>
+		
+		<view class="table-title">
+			<view 
+				class="{{index === active ? 'table-title-active' : 'table-title-items'}}" 
+				data-index="{{index}}" 
+				wx:for="{{tabTitle}}"
+			  	wx:key="{{index}}" 
+				bindtap="handleClick"
+				>{{item}}</view>
+		</view>
+		
+		<view class="search">
+			<navigator url="/pages/search/search">
+				<van-icon name="search" class="serach-icon" size="39rpx" />
+			</navigator>
+		</view>
+		
+		
+	</view>
+	
+	<!-- 轮播 -->
+	<view class="banner">
+		<swiper 
+			indicator-dots="true"
+			indicator-color="#b3b3b3"
+			indicator-active-color="#fff"
+			autoplay="true"
+			interval="3000"
+			circular="true"
+			
+		>
+			<swiper-item wx:for="{{bannerList}}">
+				<image src="{{item.pic_url}}" class="image-item"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	
+	<view class="film-list">
+		<view class="film-list-item" wx:for="{{filmList}}" wx:key="{{index}}">
+			<navigator url="{{'/pages/details/details?movieName='+item.url}}" class="navigator">
+				<view class="image">
+					<image src="{{item.pic_url}}" mode="scaleToFill" class="image-item"></image>
+				</view>
+				<view class="message">
+					<text class="mes-title">无双</text>
+					<text>时长: 130分钟  中国大陆</text>
+					<text>类型: 动作 犯罪</text>
+					<text>主演: 周润发 郭富城 张静初</text>
+					<text>评分: <text class="score">8.9</text></text>
+				</view>
+			</navigator>
+		</view>
+	</view>
+	
+	<view class="loading" wx:if="{{bool}}">
+		<text>{{loadingText}}</text>
+	</view>
+</view>

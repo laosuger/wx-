@@ -1,0 +1,9 @@
+/* pages/search/search.wxss */
+.search{
+	display: flex;
+	height: 50rpx;
+}
+.search button{
+	width: 100rpx;
+	font-size: 20rpx;
+}

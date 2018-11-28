@@ -1,0 +1,14 @@
+<!--pages/user/user.wxml-->
+<view class="header">
+	<view class="userInfo">
+		<image class="userImage" src="{{avatarUrl}}"></image>
+		<text>{{nickName}}</text>
+	</view>
+</view>
+<view>
+	<text>我的收藏</text>
+	<view wx:if="{{bool}}">
+		<view wx:for="{{list}}" wx:key="{{index}}">{{item}}</view>
+	</view>
+	<view wx:else>暂无收藏</view>
+</view>

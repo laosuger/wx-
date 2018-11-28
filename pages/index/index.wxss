@@ -1,0 +1,103 @@
+.title{
+	display: flex;
+	height: 69rpx;
+	align-items: center;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+}
+.address{
+	font-size: 28rpx;
+}
+.table-title{
+	display: flex;
+	text-align: center;
+	width: 307rpx;
+	margin: 0 auto;
+	height: 69rpx;
+	align-items: center;
+}
+.table-title-items{
+	width: 144rpx;
+	height: 39rpx;
+	border-radius: 20rpx;
+	font-size: 24rpx;
+	line-height: 39rpx;
+}
+.table-title-active{
+	width: 144rpx;
+	height: 39rpx;
+	border-radius: 20rpx;
+	font-size: 24rpx;
+	background: #e3321b;
+	color: #fff;
+	line-height: 39rpx;
+}
+
+.banner{
+	width: 100%;
+	height: 272rpx;
+}
+.swiper-item{
+	width: 750rpx;
+}
+.image-item{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.film-list{
+	overflow: hidden;
+	margin-top: 29rpx;
+}
+.film-list-item{
+	width: 710rpx;
+	height: 220rpx;
+	backgrount: #fff;
+	border-radius: 20rpx;
+	box-shadow:0 0 20rpx #dddddd;
+	margin: 81rpx auto 0;
+	
+}
+.navigator{
+	display: flex;
+}
+.film-list-item .image{
+	width: 200rpx;
+	height: 250rpx;
+	border-radius: 13rpx;
+	box-shadow: 0 0 8rpx #dddddd;
+	position: relative;
+	top: -52rpx;
+	left: 22rpx;
+	overflow: hidden;
+}
+.film-list-item .image .image-item{
+	width: 100%;
+	height: 100%;
+}
+
+.film-list-item .message{
+	width: 310rpx;
+	margin-left: 82rpx;
+	margin-top: 16rpx;
+	
+}
+.film-list-item .message .mes-title{
+	font-size: 28rpx;
+	font-weight: bold;
+}
+.film-list-item .message text{
+	font-size: 24rpx;
+	display: block;
+	lint-height: 40rpx;
+}
+.film-list-item .message .score{
+	color: #e54737;
+	display: inline;
+}
+.loading{
+	font-size: 24rpx;
+	text-align: center;
+	height: 75rpx;
+	line-height: 75rpx;
+}
